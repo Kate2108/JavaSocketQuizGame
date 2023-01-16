@@ -4,6 +4,7 @@ Programming quiz game (questions about Java and Kotlin) made with Sockets.
 1. Own protocol.
 2. GUI (JavaFX).
 3. More than 2 players can play at one moment.
+4. Rooms
 
 ## Screens
 
