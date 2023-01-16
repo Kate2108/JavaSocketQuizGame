@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="5.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.itis.controllers.FinalScoreController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Canvas fx:id="canvas" width="100" height="100" visible="false"/>
+    <Label fx:id="labelYouWon" styleClass="label-important" visible="false" text="--WIN--"/>
+
+    <Label fx:id="labelFinalScoreTitle" text="Final score" styleClass="label-title"/>
+
+    <GridPane fx:id="gridPane" styleClass="score-grid"/>
+
+    <Button fx:id="btnBackToRoom" text="Back to room" styleClass="btn-default" onAction="#backToRoomInfo"/>
+</VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.RadioButton?>
+<VBox alignment="CENTER" spacing="5.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.itis.controllers.StartScreenController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" preserveRatio="true"
+               xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    </ImageView>
+    <Label fx:id="labelQuizGame" text="QuizGame" styleClass="label-title"/>
+    <Button text="Join game" styleClass="btn-primary" onAction="#navigateToJoinRoomScene"/>
+    <Button text="Create room" styleClass="btn-primary" onAction="#navigateToCreateRoomScene"/>
+    <Button text="Exit" styleClass="btn-default" onAction="#onExitButtonClick"/>
+</VBox>

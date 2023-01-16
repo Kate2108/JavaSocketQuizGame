@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="5.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.itis.controllers.RoomInfoController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <ProgressIndicator fx:id="bar"/>
+
+    <Label fx:id="labelRoomNumber" text="Room #roomNumber" styleClass="label-title"/>
+    <Label fx:id="labelRoomCreator" text="Creator: #username"/>
+    <Label fx:id="labelRoomMaxMembers" text="Maximum number of members: #roomMembers"/>
+    <Label text="Active members"/>
+    <ListView fx:id="listActiveMembers" maxHeight="100"/>
+    <Button text="Start quiz" styleClass="btn-primary" onAction="#onStartQuizClick"/>
+    <Button text="Leave room" styleClass="btn-default" onAction="#onLeaveRoomClick"/>
+    <Label fx:id="labelError" styleClass="label-warning" wrapText="true"/>
+
+</VBox>
